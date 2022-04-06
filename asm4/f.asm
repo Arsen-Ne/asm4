@@ -15,7 +15,7 @@ PUBLIC Max
     push esi    
     push edi
 
-    mov ebx,ecx ;//занесение адреса массива b          
+    mov ebx,ecx ;//Р·Р°РЅРµСЃРµРЅРёРµ Р°РґСЂРµСЃР° РјР°СЃСЃРёРІР° b           
     mov ecx,edx
     mov esi,ebx ;// min address
     mov eax,[esi] ;// min value
@@ -24,8 +24,8 @@ PUBLIC Max
         
     add ebx,4 
 l1 :
-    cmp eax, [ebx] ;// сравниваем минимум с текущим
-    jle e1 ;// если (eax < [ebx] == true) меньше 1й, то jmp to e1
+    cmp eax, [ebx] ;// СЃСЂР°РІРЅРёРІР°РµРј РјРёРЅРёРјСѓРј СЃ С‚РµРєСѓС‰РёРј
+    jle e1 ;// РµСЃР»Рё (eax < [ebx] == true) РјРµРЅСЊС€Рµ 1Р№, С‚Рѕ jmp to e1
     mov esi,ebx
     mov eax,[ebx]
     jmp e2
@@ -79,7 +79,7 @@ SumMinMax proc stdcall, a: dword, b: dword
     push esi    
     push edi
 
-    mov ebx,a ;//занесение адреса массива b          
+    mov ebx,a ;//Р·Р°РЅРµСЃРµРЅРёРµ Р°РґСЂРµСЃР° РјР°СЃСЃРёРІР° b          
     mov ecx,b
     mov esi,ebx ;// min address
     mov eax,[esi] ;// min value
@@ -88,8 +88,8 @@ SumMinMax proc stdcall, a: dword, b: dword
         
     add ebx,4 
 l1 :
-    cmp eax, [ebx] ;// сравниваем минимум с текущим
-    jle e1 ;// если (eax < [ebx] == true) меньше 1й, то jmp to e1
+    cmp eax, [ebx] ;// СЃСЂР°РІРЅРёРІР°РµРј РјРёРЅРёРјСѓРј СЃ С‚РµРєСѓС‰РёРј
+    jle e1 ;// РµСЃР»Рё (eax < [ebx] == true) РјРµРЅСЊС€Рµ 1Р№, С‚Рѕ jmp to e1
     mov esi,ebx
     mov eax,[ebx]
     jmp e2
@@ -132,15 +132,15 @@ _Min@8 proc
     push esi    
     push edi
 
-    mov ebx,[ebp+8] ;//занесение адреса массива b          
+    mov ebx,[ebp+8] ;//Р·Р°РЅРµСЃРµРЅРёРµ Р°РґСЂРµСЃР° РјР°СЃСЃРёРІР° b          
     mov ecx,[ebp+12]
     mov esi,ebx ;// min address
     mov eax,[esi] ;// min value   
         
     add ebx,4 
 l1 :
-    cmp eax, [ebx] ;// сравниваем минимум с текущим
-    jle e1 ;// если (eax < [ebx] == true) меньше 1й, то jmp to e1
+    cmp eax, [ebx] ;// СЃСЂР°РІРЅРёРІР°РµРј РјРёРЅРёРјСѓРј СЃ С‚РµРєСѓС‰РёРј
+    jle e1 ;// РµСЃР»Рё (eax < [ebx] == true) РјРµРЅСЊС€Рµ 1Р№, С‚Рѕ jmp to e1
     mov esi,ebx
     mov eax,[ebx]  
 e1:
@@ -160,15 +160,15 @@ Max proc C, a:dword, b:dword
     push esi    
     push edi
 
-    mov ebx,a ;//занесение адреса массива b          
+    mov ebx,a ;//Р·Р°РЅРµСЃРµРЅРёРµ Р°РґСЂРµСЃР° РјР°СЃСЃРёРІР° b          
     mov ecx,b
     mov esi,ebx ;// max address
     mov eax,[esi] ;// max value   
         
     add ebx,4 
 l1 :
-    cmp eax, [ebx] ;// сравниваем минимум с текущим
-    jge e1 ;// если (eax > [ebx] == true)
+    cmp eax, [ebx] ;// СЃСЂР°РІРЅРёРІР°РµРј РјРёРЅРёРјСѓРј СЃ С‚РµРєСѓС‰РёРј
+    jge e1 ;// РµСЃР»Рё (eax > [ebx] == true)
     mov esi,ebx
     mov eax,[ebx]  
 e1:
